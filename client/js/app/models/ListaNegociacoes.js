@@ -1,21 +1,18 @@
 class ListaNegociacoes {
 
-    constructor(callback) {
+    constructor() {
 
         this._negociacoes = [];
-        this._callback = callback;
     }
 
     adiciona(negociacao) {
 
         this._negociacoes.push(negociacao);
-        this._callback(this);
     }
 
     apaga() {
 
         this._negociacoes = [];
-        this._callback(this);
     }
 
     get negociacoes() {
